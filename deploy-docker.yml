@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: pravapp
-        image: "gpreddyjgl/pravtestimg:${DOCKER_TAG}"
+        image: "gpreddyjgl/pravtestimg:${{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
